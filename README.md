@@ -3,9 +3,8 @@
 CLAN is a **self-supervised dual-view framework** designed for robust **new activity detection** in human activity recognition (HAR) systems. It learns discriminative and invariant representations from **only known activity data**, without requiring access to any novel activity samples during training.
 
 ![CLAN Overview](overview.png)
+#### Figure: CLAN framework. It consists of tailored Data Augmentation Set Construction, Discriminative Representation Learning, and Novelty Detection stages.
 
-*Figure: CLAN framework. It consists of tailored Data Augmentation Set Construction, Discriminative Representation Learning, and Novelty Detection stages.*
----
 
 ## 🚀 Motivation
 
@@ -14,8 +13,6 @@ Most HAR systems assume a fixed set of known activities. However, in real-world 
 - Overlapping patterns between known and new activities  
 - High intra-class variability within known activities  
 - Heterogeneous sensor modalities and dataset domains  
-
----
 
 ## 🔧 Core Components
 

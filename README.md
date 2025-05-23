@@ -1,21 +1,42 @@
-## 🧠🏃 CLAN: Self-supervised Dual-view Framework with Tailored Negative Sampling for New Activity Detection
+# 🧠🏃 CLAN: Contrastive Learning with Multiple Tailored Data Augmentations for New Activity Detection
 
-With the rapid growth of ubiquitous computing, analyzing human activities from multi-sensor time series has become essential for enabling intelligent and context-aware services.
+CLAN is a **self-supervised dual-view framework** designed for robust **new activity detection** in human activity recognition (HAR) systems. It learns discriminative and invariant representations from **only known activity data**, without requiring access to any novel activity samples during training.
 
-Most human activity recognition (HAR) models assume a fixed set of known activities. However, real-world scenarios often involve *new activity patterns* that were not observed during training. Detecting such novel activities at inference time remains a significant challenge due to:
-1. Overlapping patterns between known and new activities,
-2. Intra-class variability within the same activity, and
-3. Heterogeneity in sensor modalities across datasets.
+---
 
-We present **CLAN**, a novel self-supervised learning framework based on **Contrastive Learning with multiple tailored data Augmentations for New activity detection**.
+## 🚀 Motivation
 
-### 🔍 Key Features
-- **Dual-tower architecture**  
-  Captures multi-view discriminative features by combining time and frequency domain representations.
-- **Robust contrastive learning**  
-  Incorporates multiple types of *strongly shifted* augmented views as negatives, enabling the model to learn *invariant representations* that are robust to intra-class variations.
-- **Dataset-specific augmentation selector**  
-  Automatically tailors negative pair generation to each dataset’s characteristics, enhancing generalization across diverse sensor environments.
+Most HAR systems assume a fixed set of known activities. However, in real-world scenarios, *new activity patterns*—unseen during training—frequently occur. Detecting such activities at inference time is challenging due to:
 
-### 📊 Results
-CLAN outperforms state-of-the-art baselines on several real-world sensor datasets, achieving up to **+9.24% improvement in AUROC**.
+- Overlapping patterns between known and new activities  
+- High intra-class variability within known activities  
+- Heterogeneous sensor modalities and dataset domains  
+
+---
+
+## 🔧 Core Components
+
+#### 1. Multi-view Decomposition
+To reduce feature entanglement and capture complementary information, CLAN uses a **two-tower encoder**:
+- **Time-domain encoder** captures local temporal structures
+- **Frequency-domain encoder** captures periodic and spectral patterns
+
+#### 2. Diverse Augmentation Repulsion Learning
+To ensure robustness to intra-class variations, CLAN:
+- Applies **multiple strong augmentations** to each known activity sample
+- Treats the augmented views as **negatives** in contrastive learning  
+→ Encourages learning of **transformation-invariant** representations
+
+#### 3. Dataset-aware Augmentation Selection
+To adapt to diverse sensor environments, CLAN:
+- Trains a simple **binary classifier** to evaluate augmentation strength
+- Automatically **selects effective augmentation strategies** per dataset
+
+---
+
+## 📊 Results
+
+CLAN consistently outperforms state-of-the-art baselines on five real-world HAR benchmarks, achieving up to **+9.24% improvement in AUROC** for detecting new activities.
+
+---
+

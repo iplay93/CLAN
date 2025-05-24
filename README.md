@@ -1,4 +1,4 @@
-# 🧠🏃 CLAN: Contrastive Learning with Multiple Tailored Data Augmentations for New Activity Detection
+# 🧠🏃 CLAN: Self-supervised Dual-view Framework with Tailored Negative Sampling for New Activity Detection
 
 CLAN is a **self-supervised dual-view framework** designed for robust **new activity detection** in human activity recognition (HAR) systems. It learns discriminative and invariant representations from **only known activity data**, without requiring access to any novel activity samples during training.
 

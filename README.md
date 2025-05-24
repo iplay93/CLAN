@@ -34,6 +34,32 @@ To adapt to diverse sensor environments, CLAN:
 
 ---
 
+## 📚 Benchmark Datasets
+
+We evaluate CLAN on five heterogeneous human activity recognition (HAR) datasets, covering diverse sensor modalities, environments, and activity types:
+
+- **OPPORTUNITY (OPP)**  
+  Daily activities (e.g., *coffee time*) recorded in a controlled indoor setting with **242 wearable and ambient sensors**, including 3D accelerometers in drawers.  
+  [[📎 Dataset]](https://archive.ics.uci.edu/dataset/288/opportunity+activity+recognition)
+
+- **CASAS**  
+  Multi-user activities (e.g., *packing a picnic basket*) captured in a smart home equipped with **51 motion**, **8 door**, and **2 item sensors**.  
+  [[📎 Dataset]](http://casas.wsu.edu/datasets/)
+
+- **ARAS**  
+  Simple daily tasks (e.g., *watching TV*) performed by multiple residents in a smart home with **20 types of ambient sensors**.   
+  [[📎 Dataset]](https://github.com/SeyedHamidreza/ARAS-dataset)
+
+- **DOO-RE**  
+  Group activities (e.g., *seminar*) recorded in a university seminar room using **7 ambient sensor types**, such as seat occupancy and light sensors.  
+  [[📎 Dataset]](https://github.com/dasom-elab/DOO-RE)
+
+- **OPENPACK (OPEN)**  
+  Industrial tasks (e.g., *relocating product labels*) collected using **4 IMUs**, **2 biosignal sensors**, and **2 custom devices**, sampled at ~30 Hz.   
+  [[📎 Dataset]](https://open-pack.github.io/)
+
+
+
 ## 📊 Results
 
 CLAN consistently outperforms state-of-the-art baselines on five real-world HAR benchmarks, achieving up to **+9.24% improvement in AUROC** for detecting new activities.

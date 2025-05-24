@@ -55,7 +55,7 @@ We evaluate CLAN on five heterogeneous human activity recognition (HAR) datasets
   [[📎 Dataset]](https://doi.org/10.6084/m9.figshare.24558619)
 
 - **OPENPACK (OPEN)**  
-  Industrial tasks (e.g., *relocating product labels*) collected using **4 IMUs**, **2 biosignal sensors**, and **2 custom devices**, sampled at ~30 Hz.   
+  Industrial tasks (e.g., *relocating product labels*) collected using **4 IMUs**, **2 biosignal sensors**, and **2 custom devices**.   
   [[📎 Dataset]](https://open-pack.github.io/)
 
 

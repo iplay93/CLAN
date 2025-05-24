@@ -40,7 +40,7 @@ We evaluate CLAN on five heterogeneous human activity recognition (HAR) datasets
 
 - **OPPORTUNITY (OPP)**  
   Daily activities (e.g., *coffee time*) recorded in a controlled indoor setting with **242 wearable and ambient sensors**, including 3D accelerometers in drawers.  
-  [[📎 Dataset]](https://archive.ics.uci.edu/dataset/288/opportunity+activity+recognition)
+  [[📎 Dataset]](https://archive.ics.uci.edu/dataset/226/opportunity%2Bactivity%2Brecognition)
 
 - **CASAS**  
   Multi-user activities (e.g., *packing a picnic basket*) captured in a smart home equipped with **51 motion**, **8 door**, and **2 item sensors**.  

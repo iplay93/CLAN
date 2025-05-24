@@ -48,11 +48,11 @@ We evaluate CLAN on five heterogeneous human activity recognition (HAR) datasets
 
 - **ARAS**  
   Simple daily tasks (e.g., *watching TV*) performed by multiple residents in a smart home with **20 types of ambient sensors**.   
-  [[📎 Dataset]](https://github.com/SeyedHamidreza/ARAS-dataset)
+  [[📎 Dataset]](https://www.cmpe.boun.edu.tr/aras/)
 
 - **DOO-RE**  
   Group activities (e.g., *seminar*) recorded in a university seminar room using **7 ambient sensor types**, such as seat occupancy and light sensors.  
-  [[📎 Dataset]](https://github.com/dasom-elab/DOO-RE)
+  [[📎 Dataset]](https://doi.org/10.6084/m9.figshare.24558619)
 
 - **OPENPACK (OPEN)**  
   Industrial tasks (e.g., *relocating product labels*) collected using **4 IMUs**, **2 biosignal sensors**, and **2 custom devices**, sampled at ~30 Hz.   
